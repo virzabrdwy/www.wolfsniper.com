@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WolfSniperFx - Trading Education</title>
+  <style>
+    /* Reset sederhana */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #121212;
+      color: #eee;
+      line-height: 1.6;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #1f2937;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+    nav a {
+      color: #eee;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #3b82f6;
+    }
+    header {
+      height: 90vh;
+      background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 1rem;
+      position: relative;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 0;
+    }
+    header > * {
+      position: relative;
+      z-index: 1;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      color: #3b82f6;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+    }
+    .btn-primary {
+      background: #3b82f6;
+      color: white;
+      padding: 1rem 2.5rem;
+      border: none;
+      border-radius: 30px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-primary:hover {
+      background: #2563eb;
+    }
+    section {
+      max-width: 900px;
+      margin: 5rem auto;
+      padding: 0 1rem;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #3b82f6;
+      border-bottom: 3px solid #3b82f6;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+    section p, section ul {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      color: #ddd;
+    }
+    section ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    /* Testimoni slider sederhana */
+    .testimoni-container {
+      position: relative;
+      overflow: hidden;
+      height: 120px;
+      margin-top: 1rem;
+      color: #bbb;
+      font-style: italic;
+    }
+    .testimoni-slide {
+      position: absolute;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 0.8s ease;
+    }
+    .testimoni-slide.active {
+      opacity: 1;
+      position: relative;
+    }
+    /* Form daftar */
+    form {
+      max-width: 500px;
+      margin: 1rem auto 3rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    form input, form textarea {
+      padding: 0.8rem;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+      resize: vertical;
+    }
+    form button {
+      background: #3b82f6;
+      border: none;
+      color: white;
+      padding: 1rem;
+      border-radius: 30px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    form button:hover {
+      background: #2563eb;
+    }
+    footer {
+      text-align: center;
+      color: #aaa;
+      padding: 2rem 1rem;
+      background: #1f2937;
+      margin-top: 4rem;
+    }
+    footer a {
+      color: #3b82f6;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#tentang">Tentang</a>
+  <a href="#layanan">Layanan</a>
+  <a href="#testimoni">Testimoni</a>
+  <a href="#daftar">Daftar</a>
+</nav>
+
+<header>
+  <h1>WolfSniperFx 🚀</h1>
+  <p>Master Technical & Fundamental Analysis untuk Forex & Crypto</p>
+  <a href="#daftar" class="btn-primary">Gabung Sekarang</a>
+</header>
+
+<section id="tentang">
+  <h2>Tentang WolfSniperFx 👋</h2>
+  <p>WolfSniperFx adalah platform edukasi dan sinyal trading yang menggabungkan analisa teknikal, fundamental, dan sentimen pasar secara menyeluruh. Kami menyediakan panduan, ebook, dan komunitas aktif untuk membantu Anda sukses di pasar Forex dan Crypto.</p>
+</section>
+
+<section id="layanan">
+  <h2>Layanan Saya 💼</h2>
+  <ul>
+    <li>📘 Ebook Gratis dan Premium</li>
+    <li>📊 Sinyal Harian Forex & Crypto</li>
+    <li>🧠 Edukasi & Mentoring Privat</li>
+    <li>📹 Video Pembelajaran</li>
+    <li>🗂️ Grup Diskusi Telegram</li>
+  </ul>
+</section>
+
+<section id="testimoni">
+  <h2>Testimoni Klien 💬</h2>
+  <div class="testimoni-container">
+    <div class="testimoni-slide active">“Setelah ikut mentoring WolfSniperFx, saya lebih percaya diri dalam entry market.” – Andi</div>
+    <div class="testimoni-slide">“Sinyalnya konsisten dan edukasinya cocok banget untuk pemula.” – Rina</div>
+  </div>
+</section>
+
+<section id="daftar">
+  <h2>Daftar Sekarang 📝</h2>
+  <form>
+    <input type="text" placeholder="Nama Lengkap" required />
+    <input type="email" placeholder="Email Aktif" required />
+    <textarea placeholder="Pesan atau Pertanyaan..." rows="4"></textarea>
+    <button type="submit">Kirim</button>
+  </form>
+</section>
+
+<footer>
+  <p>🔗 <a href="https://www.broker-hfmint.com/sv/en/?refid=30445573" target="_blank">Link Broker HFM</a> |
+  📢 <a href="https://web.telegram.org/k/#-2556742572" target="_blank">Telegram</a> |
+  📸 <a href="https://www.instagram.com/wolfsniperfx/" target="_blank">Instagram</a></p>
+</footer>
+
+<script>
+  // Testimoni slider sederhana
+  const slides = document.querySelectorAll('.testimoni-slide');
+  let current = 0;
+  setInterval(() => {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }, 6000);
+</script>
+
+</body>
+</html>
